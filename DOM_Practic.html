@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>MG1010 Footage</title>
+   <meta name="viewport" content="width=device-width" , initial-scale=1">
+   <link href="css/domTree.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body class="mg-page">
+
+<div class="box1 boxs">
+   <div class="box1__titleCon"> 
+      <span class="box-text--subtitle1">Box 1</span>
+      <h2 class="box-text--h2">Node properties</h2> 
+   </div>
+      
+  
+  
+   <ui class="box1__list">
+ 
+      <li class="box1__item ">
+      
+         <a class="box1__link box1-Text" href="#" >Link 1</a>
+     
+      </li>
+      <li class="box1__item">
+      
+         <a class="box1__link box1-Text" href="#" >Link 2</a>
+      </li>
+      <li class="box1__item">
+         <a class="box1__link box1-Text" href="#" >Link 3</a>
+      </li>
+      <li class="box1__item">
+         <a class="box1__link box1-Text" href="#" >Link 4</a>
+      </li>
+      <li class="box1__item">
+         
+         <a class="box1__link box1-Text" href="#" >Link 5</a>
+      </li>
+   </ui>
+
+   <form class="box1-form1">
+ 
+      <label class="box1-form1__label">Find all HTML elements:
+         <input class="box1-form1__input" type="text" placeholder="a" >in Box 1
+      </label>
+      
+      <label class="box1-form1__checkboxCon">
+         <input class="box1-form1__checkbox1" type="checkbox" >
+         Show element text
+       
+      </label>
+      <label class="box1-form1__checkboxCon">
+         <input class="box1-form1__checkbox2" type="checkbox" >
+         Inherits from classes
+       
+      </label>
+      <button id='box1Btn1' class="box1-form1__btn" type="button">Find</button>
+   </form>
+   <div class="box1__result box1-result"></div> 
+   <div class="box1__result box1-result"></div> 
+</div>   
+
+
+<!-- BOX2 -->
+
+<div class="box2 boxs">
+   <div class="box2__titleCon">
+      <span class="box-text--subtitle1">Box 2</span>
+      <h2 class="box-text--h2">Attributes</h2>
+      
+   </div>
+   <div class="box2__con">
+
+      <form class="box2__form">
+         <input id='Radio1' type="radio" name="box2Radio"
+            value="radio1" checked>
+         <label for="Radio1" class="box2__label">radio 1</label>
+
+         <input id='Radio2' type="radio" name="box2Radio"
+            value="radio2">
+         <label for="Radio2" class="box2__label">radio 2</label>
+
+         <input id='Radio3' type="radio" name="box2Radio"
+            value="radio3">
+         <label for="Radio3" class="box2__label">radio 3</label>
+      </form>
+
+      <div class="box2__item">
+         <h3 class="box2__h3 box_h3"></h3>
+         <div class="box2__result"></div>
+         <form class="box2__form2">
+            <label>Add Attribute <br>
+               <input type="text" class="box2__InputText"
+                  placeholder="Attribute, Value">
+               <button class="box2__btn" type="button">ADD</button>
+            </label>
+         </form>
+      </div>
+   </div>
+</div>
+
+<!-- BOX3 -->
+<div class="box3 boxs">
+   <div class="box2__titleCon">
+      <span class="box-text--subtitle1">Box 3</span>
+      <h2 class="box-text--h2">Document modification</h2>
+   </div>
+   <div class="box3__con">
+      <ol></ol>
+      <ol class="box3__list">
+         <li class='box3__item'><a href='#'>link</a></li>
+         <li class='box3__item'><a href='#'>link</a></li>
+         <li class='box3__item'><a href='#'>link</a></li>
+      </ol>
+      <ol></ol>
+   </div>
+         
+   <form class="box3__form" action="">
+      <div>
+         <button type="button" id='box3_btn' class="box3__btn">Create Element</button>
+         <select class="box3__select">
+            <option value="append">append</option>
+            <option value="prepend">prepend</option>
+            <option value="before">before</option>
+            <option value="after">after</option>
+         </select>
+      </div>
+      <button type="button" id='box3_btn2' class="box3__btn">Delete Element</button>
+      <button type="button" id='box3_btn3' class="box3__btn">Clone Elements</button>
+      <button type="button" id='box3_btn4' class="box3__btn">Create a List</button>
+   </form>
+</div> 
+
+ <!-- BOX4 --> 
+
+<div class="box4 boxs">
+   <div class="box2__titleCon">
+      <span class="box-text--subtitle1">Box 4</span>
+      <h2 class="box-text--h2">Date</h2>
+   </div>
+   <div class="box4__time">
+      <h3 class="box4__h3">Time</h3>
+      <div class="box4__timer"></div>
+      <form class="box4__form">
+         <button type="button" class="box4__btn">Start</button>
+         <button type="button" class="box4__btn">Stop</button>
+      </form>
+   </div>
+
+   <div class="box4__today">
+     
+      <h3 class="box4__h3">Today date</h3>
+      <div class="box4__date"></div>
+   </div>
+   <div class="box4__birthday">
+      <form class="box4__form2">
+         <h3 class="box4__h3">How many days until birthday:</h3>
+         <label for='bday'>Birthday:</label>
+         <input class="box4__calendar" type="date" id='bday' name='bday' min='1900-01-01' required>
+         <button  class="box4__btn" id='box4__btn1' type="button">Show</button>
+      </form>
+      <div class="box4__bdayResult"></div>
+   </div>
+
+   <div class="box4__counter">
+      <h3 class="box4__h3">How much time is left:</h3>
+      <form class="box4__form2">
+         <input class="box4__calendar2" type="date" id='box4Calendar' name='bday' required>
+         <button  class="box4__btn" id='box4__btn2' type="button">Show</button>
+      </form>
+      <div class="box4__howMuchTimeResult"></div>
+
+   </div>
+</div>
+   
+   
+      
+  <!-- BOX5 --> 
+
+  <div class="box5 boxs">
+   <div class="box2__titleCon">
+      <span class="box-text--subtitle1">Box 5</span>
+      <h2 class="box-text--h2">Styles and Classes</h2>
+   </div>
+   <form class="box5_form">
+      Geometric shape:<select id='box5_select1'>
+   
+         <option value="circle">Circle</option>
+         <option value="square">Square</option>
+         <option value="triangle">Triangle</option>
+      </select>
+      Сolor: <select id='box5_selectColor'>
+         <option value="red">Red</option>
+         <option value="green">Green</option>
+         <option value="blue">Blue</option>
+      </select>
+         
+      <div class="box5__btns">
+         <button type="button" class="box5_btn" id='box5_btn'>Сreate</button>
+         <button type="button" class="box5_btn" id='box5_btn2'>Delete</button>
+      </div>
+   </form>
+   <!-- <div class="box5__pos">
+      <span>Position:</span>
+      <div>Left</div>
+      <div>Centr</div>
+      <div>Right</div>
+   </div> -->
+
+
+   <div>
+
+   </div>
+  </div>    
+         
+
+
+
+</body>
+<script src='js/domTree.js'></script>
+</html>
+
+
+
+
+
+
+ 
+
+
+         
+            
+   
+    
+       
+      
+     
+           
+
+   
+         
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
